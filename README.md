@@ -32,3 +32,12 @@
 ### Segurança baseada em Tokens
 * Identidade e direitos(claims) no token enviado a cada requisição
 * JWT
+
+### Versionamento de uma API - Funcionalidades
+* configurar uma versão **default**
+* usar mecanismos de versionamento diferente (por ex. query string, cabeçalho, etc.
+* controlador suportar mais de uma versão
+* informar que determinada versão sairá de suporte
+* mais de um mecanismo
+* controlador neutro (aceita qualquer versão)
+* obter informações sobre a versão no código

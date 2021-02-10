@@ -50,6 +50,8 @@ namespace Alura.WebAPI.Api
                     ValidAudience = "Talend",
                 };
             });
+
+            services.AddApiVersioning();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
