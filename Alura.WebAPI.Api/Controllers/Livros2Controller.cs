@@ -2,7 +2,6 @@
 using Alura.ListaLeitura.Persistencia;
 using Alura.WebAPI.Api.Modelos;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
@@ -76,7 +75,7 @@ namespace Alura.WebAPI.Api.Controllers
                 return Created(uri, livro.ToApi());
             }
 
-            return BadRequest();
+            return BadRequest(ErrorResponse.FromModelState(ModelState));
         }
 
         [HttpPut]
